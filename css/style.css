@@ -419,7 +419,7 @@ img { max-width: 100%; height: auto; display: block; }
 .problem-card {
     background: var(--bg-dark);
     border: 1px solid var(--surface-border);
-    border-top: 3px solid var(--accent-red);
+    border-top: 3px solid var(--accent-gold); /* Changed from red to gold */
     padding: 2.5rem 2rem;
     border-radius: 16px;
     text-align: center;
@@ -432,22 +432,22 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .p-icon {
     font-size: 3rem;
-    color: var(--accent-red);
+    color: var(--accent-gold); /* Removed red */
     margin-bottom: 1.5rem;
 }
-.problem-card h3 { font-size: 1.25rem; color: var(--text-primary); }
+.problem-card h3 { font-size: 1.25rem; color: var(--text-heading); }
 .problem-card p { color: var(--text-dimmed); font-size: 0.9375rem; }
 
 .problem-root {
-    background: rgba(225, 29, 72, 0.03);
-    border: 1px solid rgba(225, 29, 72, 0.1);
+    background: rgba(89, 118, 184, 0.03); /* Soft blue tint instead of red */
+    border: 1px solid rgba(89, 118, 184, 0.1);
     border-radius: 20px;
     padding: 3rem;
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
-.root-content h3 { font-size: 1.5rem; color: var(--accent-red); }
+.root-content h3 { font-size: 1.5rem; color: var(--text-heading); } /* Soft blue text */
 .root-content p { color: var(--text-primary); margin-bottom: 2rem; }
 .root-list {
     display: flex;
@@ -461,7 +461,7 @@ img { max-width: 100%; height: auto; display: block; }
     gap: 0.5rem;
     font-weight: 500;
 }
-.root-list i { color: var(--accent-red); }
+.root-list i { color: var(--accent-gold); }
 
 /* Solution Section */
 .solution-grid {
