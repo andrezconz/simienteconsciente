@@ -109,6 +109,37 @@ img { max-width: 100%; height: auto; display: block; }
 .mt-6 { margin-top: 1.5rem; }
 .mt-8 { margin-top: 2rem; }
 
+/* Form & WhatsApp Button */
+.form-wrapper {
+    background: var(--bg-dark);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 1rem;
+}
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 1.25rem;
+    background-color: #25D366;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: var(--transition-normal);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.2);
+}
+.btn-whatsapp:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(37, 211, 102, 0.35);
+}
+.btn-whatsapp i {
+    font-size: 1.5rem;
+}
+
 /* UI Elements */
 .btn {
     display: inline-flex;
