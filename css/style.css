@@ -727,6 +727,25 @@ footer {
     flex-wrap: wrap;
 }
 .footer-left p { color: var(--text-dimmed); font-size: 0.875rem; margin-top: 0.5rem; }
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+.social-links {
+    display: flex;
+    gap: 1.25rem;
+}
+.social-links a {
+    color: var(--text-heading);
+    font-size: 1.5rem;
+    transition: var(--transition-fast);
+}
+.social-links a:hover {
+    color: var(--accent-gold);
+    transform: translateY(-3px);
+}
 .footer-right p { color: var(--text-dimmed); font-size: 0.875rem; }
 
 /* Responsive adjustments */
