@@ -286,6 +286,36 @@ img { max-width: 100%; height: auto; display: block; }
     padding-top: 5rem;
     overflow: hidden;
 }
+
+.hero-split {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.hero-media {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ig-wrapper {
+    background: #FFF;
+    border-radius: 12px;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
 .hero-bg-elements {
     position: absolute;
     top: 0; left: 0; width: 100%; height: 100%;
@@ -784,6 +814,8 @@ footer {
     .context-grid, .learning-flex, .columns-wrapper { grid-template-columns: 1fr; gap: 3rem; }
     .method-pillars { grid-template-columns: 1fr; }
     .experience-grid { grid-template-columns: 1fr 1fr; }
+    .hero-split { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
+    .hero-text { text-align: center; }
     .hero-content { text-align: center; margin: 0 auto; }
     .hero-reinforcement { margin: 0 auto 3rem; }
     .hero-actions { justify-content: center; }
