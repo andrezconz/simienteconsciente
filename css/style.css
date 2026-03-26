@@ -63,6 +63,7 @@ img { max-width: 100%; height: auto; display: block; }
     /* Keeping the gold gradient for special texts like Logo and specific spans */
     background: var(--primary-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
@@ -138,6 +139,55 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .btn-whatsapp i {
     font-size: 1.5rem;
+}
+
+/* Netlify Form Styles */
+.netlify-form {
+    padding: 2rem;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: 0.9375rem;
+    color: var(--text-heading);
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.875rem 1.25rem;
+    border-radius: 12px;
+    border: 1px solid var(--surface-border);
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: var(--transition-normal);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-gold);
+    box-shadow: 0 0 0 4px var(--accent-gold-shadow);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-dimmed);
+    opacity: 0.6;
+}
+
+.w-100 {
+    width: 100%;
 }
 
 /* UI Elements */
@@ -253,6 +303,7 @@ img { max-width: 100%; height: auto; display: block; }
     font-weight: 700;
     background: var(--primary-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -675,6 +726,7 @@ img { max-width: 100%; height: auto; display: block; }
     margin-bottom: 1.5rem;
     background: var(--primary-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .exp-box p { font-weight: 500; color: var(--text-primary); }
